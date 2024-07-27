@@ -4,10 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>Tailwind CSS</title>
+    <link rel="icon" href="image.png">
 
+    
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+        <div id="login-form">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Login</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="login-email" class="block text-gray-600 mb-2">Email</label>
+                    <input type="email" id="login-email" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-indigo-300" required>
+                </div>
+                <div class="mb-6">
+                    <label for="login-password" class="block text-gray-600 mb-2">Password</label>
+                    <input type="password" id="login-password" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-indigo-300" required>
+                </div>
+                <button type="submit" class="w-full bg-indigo-500 text-white p-2 rounded hover:bg-indigo-600">Login</button>
+            </form>
+            <p class="text-center text-gray-600 mt-4">
+                Don't have an account? <a href="#" id="show-signup" class="text-indigo-500 hover:underline">Sign up</a>
+            </p>
+        </div>
+
+        <div id="signup-form" class="hidden">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Sign Up</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="signup-firstname" class="block text-gray-600 mb-2">First Name</label>
+                    <input type="text" id="signup-firstname" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-indigo-300" required>
+                </div>
+                <div class="mb-4">
+                    <label for="signup-lastname" class="block text-gray-600 mb-2">Last Name</label>
+                    <input type="text" id="signup-lastname" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-indigo-300" required>
+                </div>
+                <div class="mb-4">
+                    <label for="signup-email" class="block text-gray-600 mb-2">Email</label>
+                    <input type="email" id="signup-email" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-indigo-300" required>
+                </div>
+                <div class="mb-6">
+                    <label for="signup-password" class="block text-gray-600 mb-2">Password</label>
+                    <input type="password" id="signup-password" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-indigo-300" required>
+                </div>
+                <button type="submit" class="w-full bg-green-500 text-white p-2 rounded hover:bg-green-600">Sign Up</button>
+            </form>
+            <p class="text-center text-gray-600 mt-4">
+                Already have an account? <a href="#" id="show-login" class="text-green-500 hover:underline">Login</a>
+            </p>
+        </div>
+    </div>
+
+   
     <script src="script.js"></script>
-  </body>
 </html>
